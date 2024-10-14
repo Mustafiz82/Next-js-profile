@@ -27,16 +27,11 @@ export default function RootLayout({ children }) {
       >
         <Header />
 
-        <div className="drawer md:drawer-open pt-3 px-2">
+        <div className="drawer lg:drawer-open pt-3 px-2">
           <input id="my-drawer" type="checkbox" className="drawer-toggle" />
           <div className="drawer-content">
             {children}
-            <label
-              htmlFor="my-drawer"
-              className="btn btn-primary drawer-button md:hidden"
-            >
-              Open drawer
-            </label>
+           
           </div>
           <div className="drawer-side mr-5">
             <label

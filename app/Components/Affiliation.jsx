@@ -6,7 +6,7 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 const Affiliation = () => {
   return (
     <div>
-      <h3 className="text-[15px]">Affiliation</h3>
+      <h3 className="text-[15px] font-semibold">Affiliation</h3>
 
       <div className="border p-3 rounded-md">
         <div className="text-[13px] py-2 px-3 bg-[#7367F029] rounded-md mb-14 flex justify-between">
