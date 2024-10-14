@@ -5,14 +5,14 @@ const BasicDetails = () => {
     return (
         <div className='p-2 space-y-5'>
 
-            <div className="flex justify-between gap-5">
+            <div className="flex flex-col md:flex-row  justify-between gap-5">
                 <div className='flex-1'>
                     <h1 className='font-semibold pb-1 text-sm 2xl:text-base'>First Name </h1>
                     <input type=" text" className='input w-full  input-bordered rounded-md ' placeholder='First Name' />
                 </div>
                 <div className='flex-1'>
                     <h1 className='font-semibold pb-1 text-sm 2xl:text-base'>Last Name </h1>
-                    <input type=" text" className='input w-full  input-bordered rounded-md ' placeholder='First Name' />
+                    <input type=" text" className='input w-full  input-bordered rounded-md ' placeholder='Last Name ' />
                 </div>
             </div>
 
@@ -30,8 +30,8 @@ const BasicDetails = () => {
                         <p className='text-primary text-sm 2xl:text-base'>Linkedin</p>
                     </div>
 
-                    <button className='btn hover:bg-primary  mt-4 btn-outline text-primary rounded-md '>
-                        <span className='text-base 2xl:text-lg font-semibold'>+</span>
+                    <button className='btn w-full lg:w-auto hover:bg-primary  mt-4 btn-outline text-primary rounded-md '>
+                        <span className='text-base  2xl:text-lg font-semibold'>+</span>
                         Add New Account 
                          
                     </button>
@@ -40,7 +40,7 @@ const BasicDetails = () => {
             </div>
 
             <div className="flex justify-end">
-                    <button className='btn btn-primary text-white bg-primary border-none font-semibold px-8 '>Save</button>
+                    <button className='btn  btn-primary text-white bg-primary border-none font-semibold px-8 '>Save</button>
             </div>
         </div>
     );

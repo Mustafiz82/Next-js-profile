@@ -7,13 +7,13 @@ const Education = () => {
   return (
     <div>
       <div>
-        <h3 className="text-[15px]">Education</h3>
+        <h3 className="text-[15px] font-semibold">Education</h3>
 
         <div className="border p-3 rounded-md">
           <div className="text-[13px] py-2 px-3 bg-[#7367F029] rounded-md mb-14 flex justify-between">
             <div>
               <p>Dhaka University of Engineering and Technology</p>
-              <p>Computer Science and Engineering Bachelor of Engineering - BE</p>
+              <p className="mt-2 lg:mt-0">Computer Science and Engineering Bachelor of Engineering - BE</p>
               <span>2016 - 2021</span>
             </div>
             <div className="flex gap-6 text-[19px] text-[#808390] pr-2">
