@@ -10,6 +10,15 @@ export default function Sidebar() {
             <span>My Profile</span>
             <MdKeyboardArrowDown />
           </div>
+
+          <ul>
+            <li>
+              <span className="hover:bg-primary hover:text-white">My Agenda</span>
+            </li>
+            <li>
+              <span className="hover:bg-primary hover:text-white">My Profile</span>
+            </li>
+          </ul>
         </li>
       </ul>
   );
