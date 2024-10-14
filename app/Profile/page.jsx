@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaRegEdit , FaLinkedinIn } from "react-icons/fa";
+import { FaRegEdit, FaLinkedinIn } from "react-icons/fa";
+import Text from "../Components/Text";
 
 const Profile = () => {
   return (
@@ -29,7 +30,10 @@ const Profile = () => {
             </div>
           </div>
 
-          <Link href="/Profile/Edit" className="w-[25px] h-[25px] bg-primary text-white rounded-md flex items-center">
+          <Link
+            href="/Profile/Edit"
+            className="w-[25px] h-[25px] bg-primary text-white rounded-md flex items-center"
+          >
             <FaRegEdit className="m-auto mt-1" />
           </Link>
         </div>
@@ -39,16 +43,16 @@ const Profile = () => {
           <h3 className="text-[15px]">Affiliation</h3>
 
           <div className="border rounded-md p-2">
-            <div className="text-[13px] py-1 px-3 bg-[#7367F029] rounded-md mb-3">
-              <p>Bangladesh Research & Education Network (BdREN) · Full-time</p>
-              <p>Software Programmer</p>
-              <span>2019-Present</span>
-            </div>
-            <div className="text-[13px] py-1 px-3 bg-[#7367F029] rounded-md">
-              <p>Bangladesh Research & Education Network (BdREN) · Full-time</p>
-              <p>Software Programmer</p>
-              <span>2019-Present</span>
-            </div>
+            <Text
+              title="Bangladesh Research & Education Network (BdREN) · Full-time"
+              post="Software Programmer"
+              duration="2019-Present"
+            />
+            <Text
+              title="Bangladesh Research & Education Network (BdREN) · Full-time"
+              post="Software Programmer"
+              duration="2019-Present"
+            />
           </div>
         </div>
 
@@ -57,16 +61,16 @@ const Profile = () => {
           <h3 className="text-[15px]">Education</h3>
 
           <div className="border rounded-md p-2">
-            <div className="text-[13px] py-1 px-3 bg-[#7367F029] rounded-md mb-3">
-              <p>Bangladesh Research & Education Network (BdREN) · Full-time</p>
-              <p>Software Programmer</p>
-              <span>2019-Present</span>
-            </div>
-            <div className="text-[13px] py-1 px-3 bg-[#7367F029] rounded-md">
-              <p>Bangladesh Research & Education Network (BdREN) · Full-time</p>
-              <p>Software Programmer</p>
-              <span>2019-Present</span>
-            </div>
+            <Text
+              title="Bangladesh Research & Education Network (BdREN) · Full-time"
+              post="Software Programmer"
+              duration="2019-Present"
+            />
+            <Text
+              title="Bangladesh Research & Education Network (BdREN) · Full-time"
+              post="Software Programmer"
+              duration="2019-Present"
+            />
           </div>
         </div>
 
@@ -89,7 +93,10 @@ const Profile = () => {
           <div className="border rounded-md p-4">
             <ul>
               <li>
-                <Link href="/" className="bg-[#7367F029] flex items-center py-2 px-3 rounded-md gap-8">
+                <Link
+                  href="/"
+                  className="bg-[#7367F029] flex items-center py-2 px-3 rounded-md gap-8"
+                >
                   <FaLinkedinIn className="bg-[#0075b1] text-white p-[2px] rounded-sm" />
                   <p className="text-primary text-[13px]">Linkedin</p>
                 </Link>
