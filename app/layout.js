@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "@/app/Components/Header";
+import Sidebar from "./Components/Sidebar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,9 +23,30 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="light">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-100`}
       >
-        {children}
+        <Header />
+
+        <div className="drawer lg:drawer-open pt-3 px-2">
+          <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+          <div className="drawer-content">
+            {children}
+            <label
+              htmlFor="my-drawer"
+              className="btn btn-primary drawer-button lg:hidden"
+            >
+              Open drawer
+            </label>
+          </div>
+          <div className="drawer-side mr-5">
+            <label
+              htmlFor="my-drawer"
+              aria-label="close sidebar"
+              className="drawer-overlay"
+            ></label>
+            <Sidebar />
+          </div>
+        </div>
       </body>
     </html>
   );
