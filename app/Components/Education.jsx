@@ -7,9 +7,10 @@ const Education = () => {
   return (
     <div>
       <div>
-        <h3 className="text-[15px]">Education</h3>
+        <h3 className="text-[15px] font-semibold">Education</h3>
 
         <div className="border p-3 rounded-md">
+
           <div className="mb-14">
             <Text
               title="Dhaka University of Engineering and Technology"
@@ -17,6 +18,7 @@ const Education = () => {
               duration="2016 - 2021"
               icon={true}
             />
+
           </div>
 
           <Button text="Add Education" icon={IoMdAdd} />
