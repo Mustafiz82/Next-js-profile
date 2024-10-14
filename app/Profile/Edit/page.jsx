@@ -13,7 +13,7 @@ const Page = () => {
 
     console.log(activeTab)
     return (
-        <div className=' bg-white flex gap-10 p-10 mx-auto'>
+        <div className=' bg-white flex gap-5 2xl:gap-10 p-5 2xl:p-10 mx-auto'>
 
             <div className='border w-1/4 p-5 pr-10'>
                 <div className='flex justify-center items-center'>
@@ -24,14 +24,14 @@ const Page = () => {
                 </div>
 
                 <div className=' mt-5 mb-10'>
-                    <ul className='font-medium space-y-5'>
+                    <ul className='font-semibold space-y-5'>
                         <li className='flex gap-4 items-center' onClick={() => setActiveTab("basic-details")}>
                             <div className={ `${(activeTab ===  "basic-details" ) ? "bg-primary text-white" : "bg-base-200 text-primary"} rounded-lg p-2 `}>
                                 <GoPeople className='text-xl' />
                             </div>
                             <div>
-                                <h1 className='text-xl'>Basic Details</h1>
-                                <p className='text-black/60'> Name/Email/Date
+                                <h1 className='text-sm 2xl:text-base'>Basic Details</h1>
+                                <p className='text-xs 2xl:text-sm text-black/60'> Name/Email/Date
                                 </p>
                             </div>
 
@@ -41,8 +41,8 @@ const Page = () => {
                                 <GoPeople className='text-xl' />
                             </div>
                             <div>
-                                <h1 className='text-xl'>Affiliation</h1>
-                                <p className='text-black/60'> Affiliation Sitting
+                                <h1 className='text-sm 2xl:text-base'>Affiliation</h1>
+                                <p className='text-xs 2xl:text-sm text-black/60'> Affiliation Sitting
                                 </p>
                             </div>
 
@@ -52,8 +52,8 @@ const Page = () => {
                                 <GoPeople className='text-xl' />
                             </div>
                             <div>
-                                <h1 className='text-xl'>Education</h1>
-                                <p className='text-black/60'> Education Details
+                                <h1 className='text-sm 2xl:text-base'>Education</h1>
+                                <p className='text-xs 2xl:text-sm text-black/60'> Education Details
                                 </p>
                             </div>
 
@@ -64,8 +64,8 @@ const Page = () => {
                                 <GoPeople className='text-xl' />
                             </div>
                             <div>
-                                <h1 className='text-xl'>Others</h1>
-                                <p className='text-black/60'>  Interests/Resume
+                                <h1 className='text-sm 2xl:text-base'>Others</h1>
+                                <p className='text-xs 2xl:text-sm text-black/60'>  Interests/Resume
 
                                 </p>
                             </div>
