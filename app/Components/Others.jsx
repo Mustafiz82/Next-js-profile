@@ -1,5 +1,6 @@
 import React from "react";
 import { IoMdAdd } from "react-icons/io";
+import Button from "./Button";
 
 const Others = () => {
   return (
@@ -8,20 +9,14 @@ const Others = () => {
         <span className="text-[15px] font-semibold inline-block mb-1">Intrests</span>
         <p className="text-sm mb-2">You currently don't have any interests added</p>
 
-        <button className="flex items-center px-6 py-2 rounded-md border border-primary gap-2 justify-center text-[15px] text-primary mx-auto ">
-          <IoMdAdd className="text-lg" />
-          Interests
-        </button>
+        <Button text="Interests" icon={IoMdAdd} style="mx-auto" />
       </div>
 
       <div className="border rounded-md text-center py-4">
         <span className="text-[15px] font-semibold inline-block mb-1">Intrests</span>
         <p className="text-sm mb-2">You currently don't have any interests added</p>
 
-        <button className="flex items-center px-6 py-2 rounded-md border border-primary gap-2 justify-center text-[15px] text-primary mx-auto ">
-          <IoMdAdd className="text-lg" />
-          Resume
-        </button>
+        <Button text="Resume" icon={IoMdAdd} style="mx-auto" />
       </div>
     </div>
   );
